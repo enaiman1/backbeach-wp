@@ -30,7 +30,37 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<!-- ******************* The Navbar Area ******************* -->
 	<div id="wrapper-navbar">
-	<div class="top-header-holder"></div>
+	<div class="top-header-holder">
+		<div class="container">
+			<div class="row align-items-end">
+				<div class="col-4">
+				<a href="/" class="logo-holder">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="backbeach logo">
+		</a>	
+				</div>
+			<div class="col-6">
+			<div class="reservation-holder">
+			<div class="contact-holder">
+				<a href="#" class="phone">
+				<i class="fa fa-phone"></i>	
+				555 444 3333</a>
+				<a href="#" class="address">
+				<i class="fa fa-map"></i>		
+				Lot 757, Ocean Drive</a>
+			</div>
+			<a href="#" class="reservation-btn">Make a Reservation</a>
+		</div>
+			</div>
+		<div class="col-">
+		<div class="social-media-holder">
+			<a href="#" class=""><i class="fa fa-facebook"></i></a>
+			<a href="#" class=""><i class="fa fa-instagram"></i></a>
+		</div>
+		</div>
+		
+			</div>
+		</div>
+	</div>
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
@@ -45,7 +75,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 		
 
 					
-
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
 					<span class="navbar-toggler-icon"></span>
 				</button>
