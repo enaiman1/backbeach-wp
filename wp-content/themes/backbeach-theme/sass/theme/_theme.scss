@@ -1,1 +1,8 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+.home-banner {
+    height: 1080px;
+    background: #ccc;
+    background-image:url('../img/home-banner.png');
+    background-size: cover;
+}
