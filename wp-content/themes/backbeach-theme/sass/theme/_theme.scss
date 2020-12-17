@@ -4,13 +4,56 @@ $seconday: #f27257;
 
 $xl:1440px;
 $lg:992px;
-$md:768;
-$sm:576;
+$md:768px;
+$sm:576px;
 
 body {
 font-family: 'Source Sans Pro', sans-serif;
 font-size: 18px;
 line-height: 1.25;
+}
+
+.reservation-btn {
+    font-family: 'Fredericka the Great';
+    font-size: 38px;
+    border: 1px dotted $seconday;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    border-radius: 0.25em;
+    transition: 0.25s ease all;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+        background: $seconday;
+        color: white;
+    }
+    @media(max-width:$lg){
+        font-size: 18px;
+       
+    }
+    @media(max-width:$md){
+        display: none;
+        &.mobile {
+           display: block; 
+           margin-top: 10px;
+        }
+     }  
+}
+
+.mobile-logo-holder {
+    text-align: center;
+    display: none;
+    @media(max-width: $md){
+        display: block;
+    }
+    img {
+        width: 66%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        @media(max-width: $sm){
+            width: 85%;
+        }
+    }
 }
 
 #wrapper-navbar {
@@ -19,12 +62,24 @@ line-height: 1.25;
 @media (max-width:$lg) {
         margin-bottom: 0px;
     }
+    
 
     .top-header-holder{
         height: 260px;
-        background: #f1f1f1;
+        // background: #f1f1f1;
         padding-top:50px;
         padding-bottom: 50px;
+        @media(max-width:$lg){
+            height: auto;
+            padding-top:30px;
+            padding-bottom: 30px;
+         }
+         @media(max-width:$md){
+            padding-top:15px;
+            padding-bottom: 15px;
+           
+         }  
+
         .navbar-toggler {
             display: none;
             @media(max-width:$lg){
@@ -49,19 +104,50 @@ line-height: 1.25;
                 text-transform: uppercase;
                 font-weight: 600;
             }
+            &.md-view {
+                display:none;
+            }
+            @media(max-width:$md){
+                display: none;
+                &.md-view {
+                    display: flex;
+                    padding: 0.5em;
+                    padding-bottom: 0.5em;
+                    align-items: center;
+                    margin: -0.5em;
+                    .menu-title{
+                        margin-top: 0px;
+                        margin-right: 0.5em;
+                        font-size: 18px;
+                    }
+                    .bar {
+                        height: 3px;
+                        border-radius: 3px;
+                        background: rgba(#5da0aa, 0.5);
+                        margin-bottom: 3px;
+                        width: 1em;
+                    }
+                }
+             }  
         }
 
          .container {
              .logo-holder {
                  display: block;
 
-                  .logo{
-                    width: 275px;
-                }
+                  img {
+                      width: 275px;
+                    @media(max-width:$lg){
+                        width: 225px;
+                     }  
+                  }
+                  @media(max-width:$md){
+                    display: none;
+                 }  
              }
 
              .col-6{
-                @media(max-width:$lg){
+                @media(max-width:$md){
                    text-align:center;
                 }
              }
@@ -75,21 +161,30 @@ line-height: 1.25;
                         color: darken($seconday, 15%);
                     }
                 }
+
                 @media (max-width:$lg) {
                     display: none;
                 }
+
                 &.social-media-holder-tablet{
                     display: none;
                     @media(max-width: $lg){
                         display: inline-block;
                         font-size: 18px;
                     }
+                    @media(max-width:$md){
+                        display: none;
+                     }  
                 }
                
             }
             .contact-holder {
                 font-size: 18px;
                 font-weight: 600;
+                @media(max-width: $md){
+                    display: flex;
+                    justify-content: space-between;
+                }
                 a {
                     display: inline-block;
                     margin-right: 1em;
@@ -97,6 +192,10 @@ line-height: 1.25;
                     @media(max-width:$lg){
                         margin-right: 0.5em;
                         margin-bottom: 0.5em;
+                    }
+                    @media(max-width:$md){
+                        margin-right: 0em;
+                        margin-bottom: 0em;
                     }
                     color: $primary;
                     .fa {
@@ -109,26 +208,12 @@ line-height: 1.25;
                         display: none;
                     }
                 }
-            }
-            .reservation-btn {
-                font-family: 'Fredericka the Great';
-                font-size: 38px;
-                border: 1px dotted $seconday;
-                display: inline-block;
-                padding: 0.25em 0.5em;
-                border-radius: 0.25em;
-                transition: 0.25s ease all;
-                cursor: pointer;
-                text-decoration: none;
-                &:hover {
-                    background: $seconday;
-                    color: white;
-                }
                 @media(max-width:$lg){
                     font-size: 18px;
-                   
+
                 }
             }
+            
          }
 
     }
@@ -137,6 +222,9 @@ line-height: 1.25;
         border-top: 1px solid rgba(#5da0aa, 0.5);
         border-bottom: 1px solid rgba(#5da0aa, 0.5);
         padding: 0px;
+        @media (max-width:$md) {
+            border-top: 0px;
+        }
         ul {
             flex: 1;
             justify-content: space-between;
