@@ -30,28 +30,30 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<!-- ******************* The Navbar Area ******************* -->
 	<div id="wrapper-navbar">
-	<div class="top-header-holder">
-		<div class="container">
-			<div class="row align-items-end">
-				<div class="col-md-4">
-				<a href="/" class="logo-holder">
-			<img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="backbeach logo" width="275">
-		</a>	
-		</div>
-			<div class="col-md-6">
-			 <div class="reservation-holder">
-			 <div class="contact-holder">
-				<a href="#" class="phone">
-				<i class="fa fa-phone"></i>	
-				555 444 3333</a>
-				<a href="#" class="address">
-				<i class="fa fa-map"></i>		
-				Lot 757, Ocean Drive</a>
-			 <div class="social-media-holder-tablet">
-				<a href="#" class=""><i class="fa fa-facebook"></i></a>
-				<a href="#" class=""><i class="fa fa-instagram"></i></a>
-			 </div>
-			<button class="navbar-toggler md-view" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+	  <div class="top-header-holder">
+			<div class="container">
+				<div class="row align-items-end">
+				 <div class="col-md-4">
+				 <a href="/" class="logo-holder">
+				 <img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="backbeach logo" width="275">
+				 </a>	
+				 </div>
+				 <div class="col-md-6">
+			 		<div class="reservation-holder">
+			 		<div class="contact-holder">
+						<a href="#" class="phone">
+							<i class="fa fa-phone"></i>	
+							555 444 3333
+						</a>
+						<a href="#" class="address">
+							<i class="fa fa-map"></i>		
+							Lot 757, Ocean Drive
+						</a>
+			 		 <div class="social-media-holder-tablet">
+						<a href="#" class=""><i class="fa fa-facebook"></i></a>
+						<a href="#" class=""><i class="fa fa-instagram"></i></a>
+			 		</div>
+				    <button class="navbar-toggler md-view" type="button" data-toggle="collapse"  data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
 					<div class="menu-title">
 							Menu
 					</div>
@@ -61,14 +63,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="bar"></div>
 					</div>
 					
-			</button>
-			</div>
+				    </button>
+				   </div>
 			
-			<a href="#" class="reservation-btn">Make a Reservation</a>
-		</div>
-			</div>
-		<div class="col-">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+				   <a href="#" class="reservation-btn">Make a Reservation</a>
+				  </div>
+				  </div>
+				<div class="col-">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
 					<div class="bar"></div>
 					<div class="bar"></div>
 					<div class="bar"></div>
@@ -77,27 +79,27 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 				
 				</button>
-		<div class="social-media-holder">
-			<a href="#" class=""><i class="fa fa-facebook"></i></a>
-			<a href="#" class=""><i class="fa fa-instagram"></i></a>
-		</div>
-		</div>
+				<div class="social-media-holder">
+				<a href="#" class=""><i class="fa fa-facebook"></i></a>
+				<a href="#" class=""><i class="fa fa-instagram"></i></a>
+				</div>
+				</div>
 		
-			</div>
+				</div>
 			
-		</div>
-	</div>
+				</div>
+				</div>
 
-		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
+				<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav id="main-nav" class="navbar navbar-expand-lg " aria-labelledby="main-nav-label">
+				<nav id="main-nav" class="navbar navbar-expand-lg " aria-labelledby="main-nav-label">
 
-			<h2 id="main-nav-label" class="sr-only">
+				<h2 id="main-nav-label" class="sr-only">
 				<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
-			</h2>
+				</h2>
 
 		
-			<div class="container">
+				<!-- <div class="container"> -->
 		
 
 					
@@ -122,20 +124,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div><!-- .container -->
 			
 
-		</nav><!-- .site-navigation -->
+			</nav><!-- .site-navigation -->
+		</div>
 
 	</div><!-- #wrapper-navbar end -->
 
-<div class="container">
-<div class="mobile-logo-holder">
-				<div>
-				  <a href="/">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="backbeach logo" width="275">
-				  </a>
-				</div>
 			
-		   <div>
-		   <a href="#" class="reservation-btn mobile">Make a Reservation</a>
-           </div>
-		</div>
+   
 </div>
+
