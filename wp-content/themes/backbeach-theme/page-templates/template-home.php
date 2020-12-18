@@ -72,5 +72,32 @@ get_header();
     </div>
 </div>
 
+<div class="home-news">
+<div class="bg-image"></div>
+    <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                <a href="#" class="news-img">
+                   <div class="image"></div>
+                   <div class="date">Sun 13 May</div>
+                   <div class="category">What's On</div>
+                   
+                </a>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-6">
+                    <h2>Mother's Day </h2>
+                        <p>
+                        Join us to celebrate your mom this Mother;s Day. Breakfast and lunch is pretty full but we're taking dinner reservations so you can enjoy the best of our superb location right on the beach. All dinner reservations receive a complimentary box of chocolate too...
+                        </p>
+                    <a href="#" class="button">
+                       Read More <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+
+    </div>
+</div>
+</div>
+
 <?php
 get_footer();
