@@ -2,6 +2,7 @@
 $primary: #223A47;
 $primary-300: #5DA0AA;
 $seconday: #f27257;
+$seconday-300: #FFB5A6;
 
 $xl:1440px;
 $lg:992px;
@@ -13,6 +14,36 @@ font-family: 'Source Sans Pro', sans-serif;
 font-size: 18px;
 line-height: 1.25;
 height: 8000px;
+}
+
+.button {
+    
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    background: $primary;
+    color: white;
+    border: 2px dashed white;
+    border-radius: 0.25em;
+    transition: ease 0.25s all;
+    font-family: "Fredericka the Great";
+    cursor: pointer;
+    position: relative;
+    // line-height: 1;
+   
+    i {
+        position: absolute;
+        right: 1em;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &:hover{
+        background: $primary-300;
+        
+    }
+    @media(max-width: $xl){
+        font-size: 20px;
+    }
+
 }
 
 .reservation-btn {
@@ -459,3 +490,87 @@ height: 8000px;
     
  
 }
+
+.home-welcome{
+    margin-top: 120px;
+    margin-bottom: 120px;
+    @media (max-width: $md) {
+        margin-top: 60px;
+    margin-bottom: 60px;
+    }
+    @media (max-width: $sm) {
+        margin-top: 30px;
+    margin-bottom: 30px;
+    }
+
+    .title-holder{
+        padding-bottom: 60px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid rgba($primary-300, 0.5);
+    @media (max-width: $md) {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    @media (max-width: $sm) {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+    }
+    
+
+    h2{
+        line-height: 1;
+       span {
+           font-family: 'Pacifico';
+           font-size: 160px;
+           display: block;
+           color: $seconday-300;
+           transform: translate(140px, 30px);
+           @media(max-width: $lg){
+            font-size: 120px;
+            transform: translate(120px, 25px)
+        }
+           @media(max-width: $md){
+            font-size: 60px;
+            transform: translate(60px, 0px)
+        }
+           @media(max-width: $sm){
+            font-size: 60px;
+            transform: translate(30px, 0px)
+        }
+       } 
+       font-family: "Fredericka the Great";
+        font-size: 72px;
+       @media(max-width: $xl){
+           font-size: 60px;
+
+       }
+
+       @media(max-width: $lg){
+        font-size: 36px;
+        
+    }
+    }
+    p {
+        line-height: 2;
+        margin-bottom: 1em;
+        font-weight: 300;
+        &.tagline{
+            font-size:24px;
+            color: $primary-300;
+            font-weight: 600;
+            line-height: 1.5;
+            @media (max-width: $lg) {
+               font-size: 18px;
+            }
+        }
+    }
+
+    .button {
+        @media (max-width: $md) {
+            display: inline-block;
+            padding-right: 2em;
+        }
+    }
+}
+

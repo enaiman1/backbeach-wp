@@ -38,10 +38,37 @@ get_header();
                 <a href="#" class="call-to-action third">
                    <div class="image"></div>
                    <div class="title">Functions</div>
+                  </a> 
                 </div>
-            </a>
+            
            
         </div>
+    </div>
+</div>
+
+<div class="home-welcome">
+    <div class="title-holder">
+        <div class="container">
+            <h2><span>Welcome To</span> The BackBeach Eating House</h2>
+        </div>
+    </div>
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-8">
+          <p class="tagline">
+        There's only one place like the Backbeach Cafe & Restaurant, located on Bunbury's Baclbeach with uninterrupted views of crip white sand and the Indian Ocean. The perfect place to eat, relax and enjoy.
+        </p>
+        <p>
+        We are proud to support local business and local producers by sourcing as much as possible locally, including fish from Augusta, beef and chicken from Western Australia (DBC), coffee from Yallingup and wines from Ferguson Valley, Margaret River and throughout the South West.
+        </p>
+          </div>
+          <div class="col-lg-3">
+              <div class="button">
+                  Read More <i class="fa fa-chevron-right"></i>
+                </div>
+          </div>
+      </div>
     </div>
 </div>
 
