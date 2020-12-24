@@ -50,9 +50,9 @@ get_header();
     <div class="title-holder">
         <div class="container">
             <h2><span>Welcome To</span> The BackBeach Eating House</h2>
-        </div>
-    </div>
-    <div class="container">
+            </div>
+            </div>
+        <div class="container">
       <div class="row">
           <div class="col-lg-1"></div>
           <div class="col-lg-8">
@@ -69,14 +69,15 @@ get_header();
                 </div>
           </div>
       </div>
+        </div>
     </div>
 </div>
 
-<div class="home-news">
-<div class="bg-image"></div>
-    <div class="container">
+    <div class="home-news">
+        <div class="bg-image"></div>
+        <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-5">
+                <div class="col-xl-5 col-md-6">
                 <a href="#" class="news-img">
                    <div class="image"></div>
                    <div class="date">Sun 13 May</div>
@@ -84,8 +85,8 @@ get_header();
                    
                 </a>
                 </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-6">
+                <div class="col-xl-1 d-none d-xl-block"></div>
+                <div class="col-md-6">
                     <h2>Mother's Day </h2>
                         <p>
                         Join us to celebrate your mom this Mother;s Day. Breakfast and lunch is pretty full but we're taking dinner reservations so you can enjoy the best of our superb location right on the beach. All dinner reservations receive a complimentary box of chocolate too...
@@ -95,8 +96,35 @@ get_header();
                     </a>
                 </div>
 
+        </div>
     </div>
-</div>
+
+    <div class="home-about">
+    <div class="bg-image"></div>
+    <div class="title-holder">
+        <div class="container">
+            <h2><span>Welcome To</span> The BackBeach Eating House</h2>
+            </div>
+            </div>
+        <div class="container">
+      <div class="row">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-8">
+          <p class="tagline">
+        There's only one place like the Backbeach Cafe & Restaurant, located on Bunbury's Baclbeach with uninterrupted views of crip white sand and the Indian Ocean. The perfect place to eat, relax and enjoy.
+        </p>
+        <p>
+        We are proud to support local business and local producers by sourcing as much as possible locally, including fish from Augusta, beef and chicken from Western Australia (DBC), coffee from Yallingup and wines from Ferguson Valley, Margaret River and throughout the South West.
+        </p>
+          </div>
+          <div class="col-lg-3">
+              <div class="button">
+                  Read More <i class="fa fa-chevron-right"></i>
+                </div>
+          </div>
+      </div>
+        </div>
+    </div>
 </div>
 
 <?php

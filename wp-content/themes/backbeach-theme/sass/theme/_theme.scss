@@ -477,7 +477,7 @@ body {
   }
 }
 
-.home-welcome {
+.home-welcome, .home-about {
   margin-top: 120px;
   margin-bottom: 120px;
   @media (max-width: $md) {
@@ -555,16 +555,31 @@ body {
 .home-news {
   padding-top: 200px;
   padding-bottom: 200px;
+  @media(max-width: $xl){
+    padding-top: 100px;
+  padding-bottom: 100px;
+}
+  @media(max-width: $xl){
+    padding-top: 50px;
+  padding-bottom: 50px;
+}
+
   position: relative;
   h2 {
       font-family: 'Fredericka the great';
       font-size: 60px;
       margin-bottom: 0.5em;
-      color: $seconday
+      color: $seconday;
+      @media (max-width: $md) {
+        font-size: 36px;
+      }
   }
   p{
       line-height: 2;
       font-weight: 300;
+      @media (max-width: $md) {
+        line-height: 1.5;
+      }
   }
   .bg-image {
     position: absolute;
@@ -583,6 +598,12 @@ body {
       top: 0;
       right: 0;
       background: white;
+      @media(max-width: $xl){
+        height: 100px;
+    }
+      @media(max-width: $md){
+        height: 50px;
+    }
     }
     &::after {
       content: "";
@@ -593,6 +614,14 @@ body {
       top: 0;
       right: 0;
       background: linear-gradient(to bottom, transparent, white);
+      @media(max-width: $xl){
+        height: 100px;
+      bottom: 100px;
+    }
+    @media(max-width: $md){
+      height: 50px;
+      bottom: 50px;
+  }
     }
   }
 
@@ -644,9 +673,9 @@ body {
           font-size: 25px;
           position: absolute;
           bottom: 15px;
-          left: 50%;
+          left: 15%;
         transform: translateX(50%);
-          padding: 0.5em 1.5em;
+          
           background: $primary-300;
           color: white;
           border: 2px dashed white;
@@ -654,13 +683,33 @@ body {
           text-align: center;
           transition: ease 0.25s all;
           font-family: "Fredericka the Great";
+          margin-right: -0.5em;
+          margin-left: -0.5em;
+          padding: 0.5em 1.5em;
           @media (max-width: $xl) {
-            font-size: 20px;
+            padding: 0.5em 1em;
+          }
+          @media (max-width: $lg) {
+            font-size: 22px;
+            bottom: -60px;
+          }
+          @media (max-width: $md) {
+            font-size: 18px;
+            bottom: 30px;
+           
           }
           &.category {
               bottom: initial;
               top: 15px;
               background: $seconday;
+              @media (max-width: $lg) {
+                top: -60px;
+                bottom: initial;
+              }
+              @media (max-width: $md) {
+                top: 15px;
+              
+              }
           }
          
         }
@@ -684,11 +733,12 @@ body {
       .button {
           margin-top: 50px;
           @media(max-width: $lg){
-              margin-top: 40px
+              margin-top: 20px
           }
           @media(max-width: $md){
-              margin-top: 30px
+              margin-top: 10px
           }
+         
       }
   }
 
