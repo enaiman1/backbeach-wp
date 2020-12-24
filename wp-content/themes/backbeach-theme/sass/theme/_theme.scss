@@ -373,7 +373,24 @@ body {
   }
 }
 
-.home-call-to-action {
+.home-call-to-action, .home-about-images {
+
+  &.home-about-images {
+    transform: translateY(-75%);
+    position: relative;
+    z-index: 500;
+    @media (max-width: $xl) {
+      transform: translateY(-100%);
+    }
+    @media (max-width: $lg) {
+      transform: translateY(-115%);
+    }
+    @media (max-width: $md) {
+      transform: translateY(0%);
+      display: none;
+    }
+  }
+
   @media (max-width: $md) {
     text-align: center;
   }
@@ -554,6 +571,27 @@ body {
     position: relative;
     padding-top: 150px;
     padding-bottom: 300px;
+    
+
+    @media (max-width: $xl) {
+   
+      padding-bottom: 250px;
+    }
+    @media (max-width: $lg) {
+      padding-top: 100px;
+      padding-bottom: 200px;
+    }
+    @media (max-width: $md) {
+      padding-top: 75px;
+      padding-bottom: 125px;
+    }
+
+    @media (max-width: $sm) {
+      padding-top: 50px;
+      padding-bottom: 10px;
+    }
+
+    margin-top: 0px;
     .title-holder {
       border-bottom: 1px solid rgba($primary-300, 0.5);
       position: relative;
@@ -798,3 +836,46 @@ body {
       }
   }
 
+  .home-testimonials {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-top:-400px;
+    h2{
+      font-family: 'Fredericka the Great';
+      font-size: 72px;
+    }
+    .testimonial-holder{
+      padding: 60px;
+      background: $seconday;
+      color: white;
+      margin-top: 50px;
+      border-radius: 30px;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 2;
+      border: 2px dashed white;
+      box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.25) ;
+      .seperator {
+        height: 1px;
+        background: white;
+        margin-top: 30px;
+    margin-bottom: 30px;
+      }
+      .author {
+        font-family: 'Fredericka the Great';
+        font-size: 30px;
+      }
+    }
+    .bg-overlay{
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-image: url(../img/testimonials-bg.png);
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+    }
+  }

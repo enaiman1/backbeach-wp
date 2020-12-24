@@ -138,6 +138,51 @@ get_header();
     </div>
 </div>
 
+<div class="home-about-images">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#" class="call-to-action">
+                   <div class="image"></div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="call-to-action second ">
+                   <div class="image"></div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="call-to-action third">
+                   <div class="image"></div>
+                  </a> 
+                </div>
+            
+           
+        </div>
+    </div>
+</div>
+
+<div class="home-testimonials">
+    <div class="container">
+        <div class="bg-overlay">
+
+        </div>
+        <div class="row">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-7">
+                <h2>Happy Customers</h2>
+                <div class="testimonial-holder">
+                    <p>
+                        Ah! What a place. I could go have breakfast every single day and not get tired by the view. The staff are very kind and helpful, and the food is AMAZING! A MUST visit place if you're visiting Bunbury!
+                    </p>
+                    <div class="seperator"></div>
+                    <div class="author">Saad Ulde</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <?php
 get_footer();
