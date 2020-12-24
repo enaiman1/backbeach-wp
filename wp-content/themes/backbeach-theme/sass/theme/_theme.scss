@@ -304,7 +304,7 @@ body {
   }
   position: relative;
 
-  &:before {
+  &::before {
     content: "";
     height: 230px;
     display: block;
@@ -324,7 +324,7 @@ body {
     }
   }
 
-  &:after {
+  &::after {
     content: "";
     height: 230px;
     display: block;
@@ -462,7 +462,7 @@ body {
     }
 
     &.second {
-      background-image: url("../img/call-to-action-2.png");
+      background-image: url(../img/call-to-action-2.png);
       background: $primary-300;
       .title {
         background: $primary;
@@ -470,7 +470,7 @@ body {
     }
 
     &.third {
-      background-image: url("../img/call-to-action-3.png");
+      background-image: url(../img/call-to-action-3.png);
       background: $primary;
       .title {
         background: $seconday;
@@ -494,7 +494,7 @@ body {
   }
 }
 
-.home-welcome, .home-about {
+.home-welcome, .home-about, .home-subscribe {
   margin-top: 120px;
   margin-bottom: 120px;
   overflow: hidden;
@@ -565,6 +565,85 @@ body {
         font-size: 18px;
       }
     }
+  }
+
+  &.home-subscribe{
+  background: $primary;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  border-top: 2px dashed white;
+  border-bottom: 2px dashed white;
+
+  @media (max-width: $xl) {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  @media (max-width: $md) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media (max-width: $sm) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &::before{
+content: '';
+display: block;
+position: absolute;
+bottom: 0;
+top: 0;
+left: 0;
+right: 0;
+background-image: url(../img/subscribe-bg.png);
+background-size: cover;
+background-position: center;
+  }
+.container {
+  position: relative;
+}
+  h2{
+    span{
+      color: $primary-300;
+    }
+  }
+  input {
+    width: 100%;
+    padding: 0.75em 1em;
+    font-size: 24px;
+    color: black;
+    background: white;
+    border: 2px dashed $primary-300;
+    height: auto;
+    min-height: auto;
+    line-height: initial;
+
+    @media (max-width: $xl) {
+      font-size:20px;
+      margin-bottom: 30px;
+    }
+    @media (max-width: $md) {
+     font-size: 18px;
+     
+    }
+    @media (max-width: $sm) {
+     
+    }
+
+    &[type="submit"]{
+      background: $seconday;
+      color: white;
+      font-family: "Fredericka the Great";
+      &:hover{
+        background: $seconday-300;
+      }
+    }
+  }
+  
   }
 
   &.home-about{
