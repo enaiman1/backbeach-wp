@@ -200,5 +200,48 @@ get_header();
     </div>
 </div>
 
+<div class="home-social">
+    <div class="title-holder">
+        <div class="container">
+            <h2>
+                <span>Socials</span> Follow us on facebook & instagram
+            </h2>
+        </div>
+    </div>
+     <div class="container">
+         <div class="row">
+             <div class="col-lg-1"></div>
+             <div class="col-lg-11"> 
+                   <div class="facebook-holder">
+                       <div class="title">
+                          <i class="fa fa-facebook"></i>
+                            What's new on facebook</div>
+                       <div class="row">
+                           <div class="col-lg-6">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/call-to-action-1.png" alt="News" width="275">    
+                           </div>
+                           <div class="col-lg-6">
+                                <div class="content">
+                                    <div class="meta-data">
+                                        <div class="date"> <i class="fa fa-calendar"></i>Posted 31 Jan 2020</div>
+                                        <div class="likes"> <i class="fa fa-thumbs-up"></i> 24 Likes</div>
+                                    </div>
+                                    <p>
+                                        Check out the view (and the dolphins, they're out here today!)
+                                        Duis posuer justo se tellus conque, a convallis metus molestie. Quisque pellen tesque anter feugiate velit ullam corper venenatis conque
+                                    </p>
+                                    <a href="#" class="button">
+                                        Read on facebook
+                                    </a>
+                                </div>
+                           </div>
+                       </div>
+                   </div>              
+             </div>
+         </div>
+    </div>
+</div>
+
+
 <?php
 get_footer();

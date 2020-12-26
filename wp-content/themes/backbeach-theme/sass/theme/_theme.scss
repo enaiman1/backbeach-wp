@@ -494,7 +494,7 @@ body {
   }
 }
 
-.home-welcome, .home-about, .home-subscribe {
+.home-welcome, .home-about, .home-subscribe, .home-social {
   margin-top: 120px;
   margin-bottom: 120px;
   overflow: hidden;
@@ -720,8 +720,45 @@ background-position: center;
       }
     }
   }
-    
+
+  .facebook-holder{
+    border: 2px dashed $seconday;
+    padding: 60px;
+    // height: 600px;
+    border-radius: 15px;
+
+    .title{
+      font-size: 60px;
+      margin-bottom: 60px;
+      color: $seconday;
+      font-family: "Fredericka the Great";
+
+      .fa{
+        color: $primary;
+        margin-right: .5em;
+      }
+    }
+   
+      .content{
+        .meta-data{
+          display: flex;
+          border-bottom: 2px dotted $primary-300;
+          padding-bottom: 30px;
+          margin-bottom: 30px;
+          .date, .likes {
+            flex: 1;
+            .fa {
+              color: $primary-300;
+              font-size: 1.5em;
+              margin-right: 0.25em;
+            }
+          }
+        }
+      }
+    }
   }
+    
+
 
 
 .home-news {
