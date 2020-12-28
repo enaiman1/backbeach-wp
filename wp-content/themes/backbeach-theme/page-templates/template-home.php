@@ -215,7 +215,8 @@ get_header();
                    <div class="facebook-holder">
                        <div class="title">
                           <i class="fa fa-facebook"></i>
-                            What's new on facebook</div>
+                            What's new on facebook
+                        </div>
                        <div class="row">
                            <div class="col-lg-6">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/call-to-action-1.png" alt="News" width="275">    
@@ -236,7 +237,14 @@ get_header();
                                 </div>
                            </div>
                        </div>
-                   </div>              
+                   </div>    
+                   <div class="instagram-holder">
+                        <div class="title">
+                          <i class="fa fa-instagram"></i>
+                            @backbeachcafe
+                        </div>
+                        
+                   </div>          
              </div>
          </div>
     </div>
