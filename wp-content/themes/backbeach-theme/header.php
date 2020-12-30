@@ -23,6 +23,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<!-- aos css animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 	<?php wp_head(); ?>
 </head>
 
@@ -36,20 +39,23 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="container">
 				<div class="row align-items-end">
 				 <div class="col-md-4">
-				 <a href="/" class="logo-holder">
+				 <a href="/" class="logo-holder" 		data-aos="fade-down"data-aos-easing="linear"
+     				data-aos-duration="1200" >
 				 <img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="backbeach logo" width="275">
 				 </a>	
 				 </div>
 				 <div class="col-md-6">
-			 		<div class="reservation-holder">
+			 		<div class="reservation-holder" data-aos="fade-down"
+     					data-aos-easing="linear"
+     					data-aos-duration="2000">
 			 		<div class="contact-holder">
 						<a href="#" class="phone">
 							<i class="fa fa-phone"></i>	
-							555 444 3333
+							407 555 4444
 						</a>
 						<a href="#" class="address">
 							<i class="fa fa-map"></i>		
-							Lot 757, Ocean Drive
+							1001 Holt Ave, Winter Park, FL 32789
 						</a>
 			 		 <div class="social-media-holder-tablet">
 						<a href="#" class=""><i class="fa fa-facebook"></i></a>
@@ -81,7 +87,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 				
 				</button>
-				<div class="social-media-holder">
+				<div class="social-media-holder" data-aos="fade-down"
+     					data-aos-easing="linear"
+     					data-aos-duration="2000">
 				<a href="#" class=""><i class="fa fa-facebook"></i></a>
 				<a href="#" class=""><i class="fa fa-instagram"></i></a>
 				</div>

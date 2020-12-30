@@ -13,7 +13,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   line-height: 1.25;
-  height: 8000px;
+
 }
 
 .button {
@@ -281,7 +281,7 @@ body {
 }
 
 .home-banner {
-  height: 1080px;
+  height: 700px;
 
   background-image: url("../img/home-banner.png");
   background-size: cover;
@@ -296,7 +296,8 @@ body {
   }
   @media (max-width: $lg) {
     padding-bottom: 75px;
-    background-position: bottom center;
+    background-position: center;
+    height: 400px;
   }
   @media (max-width: $md) {
     padding-bottom: 60px;
@@ -343,8 +344,8 @@ body {
     }
   }
   @media (max-width: $lg) {
-    background-position: top -350px center;
-    height: 650px;
+    // background-position: top -250px center;
+    height: 550px;
   }
   @media (max-width: $md) {
     height: 450px;
@@ -358,10 +359,10 @@ body {
     position: relative;
     z-index: 1000;
     @media (max-width: $xl) {
-      font-size: 90px;
+      font-size: 80px;
     }
     @media (max-width: $lg) {
-      font-size: 72px;
+      font-size: 62px;
     }
     @media (max-width: $md) {
       font-size: 48px;
@@ -496,10 +497,96 @@ body {
 .home-welcome,
 .home-about,
 .home-subscribe,
-.home-social {
+.home-social, #wrapper-footer {
   margin-top: 120px;
   margin-bottom: 120px;
   overflow: hidden;
+
+  &#wrapper-footer{
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 0px;
+    .copyright {
+      margin-top: 30px;
+      @media (max-width: $md) {
+        margin-top: 15px;
+      }
+     
+    }
+    @media (max-width: $xl) {
+      padding-top: 75px;
+      padding-bottom: 75px;
+    }
+    @media (max-width: $md) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    @media (max-width: $sm) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    input, textarea{
+      width: 100%;
+      padding: 0.75em 1em;
+      font-size: 24px;
+      color: black;
+      background: white;
+      border: 2px dashed $primary-300;
+      height: auto;
+      min-height: auto;
+      line-height: initial;
+      margin-bottom: 30px;
+
+      @media (max-width: $xl) {
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+      @media (max-width: $md) {
+        font-size: 18px;
+      }
+      @media (max-width: $sm) {
+      }
+
+      &[type="submit"] {
+        background: $seconday;
+        color: white;
+        font-family: "Fredericka the Great";
+        &:hover {
+          background: $seconday-300;
+        }
+      }
+    }
+
+    .container, .title-holder {
+      position: relative;
+    }
+    .bg-image {
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-image: url(../img/news-bg.png);
+      background-position: top center;
+
+      .top-overlay {
+        // position: absolute;
+        top: -1px;
+        left: 0;
+        right: 0;
+        display: flex;
+      }
+      .bottom-overlay {
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+
   @media (max-width: $md) {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -1015,6 +1102,12 @@ body {
   h2 {
     font-family: "Fredericka the Great";
     font-size: 72px;
+    @media (max-width: $lg) {
+      font-size: 60px;
+    }
+    @media (max-width: $md) {
+      font-size: 36px;
+    }
   }
   .testimonial-holder {
     padding: 60px;
@@ -1027,6 +1120,17 @@ body {
     line-height: 2;
     border: 2px dashed white;
     box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.25);
+    @media (max-width: $lg) {
+      padding: 45px;
+      margin-top: 40px;
+      font-size: 20px;
+    }
+    @media (max-width: $md) {
+      padding: 30px;
+      margin-top: 30px;
+      font-size: 18px;
+      line-height: 1.5;
+    }
     .seperator {
       height: 1px;
       background: white;
@@ -1048,5 +1152,20 @@ body {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
+  }
+}
+
+.footer-warning{
+  background: $primary;
+  color: white;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  h3 {
+    font-size: 24px;
+    font-weight: 600; 
+  }
+  img {
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }

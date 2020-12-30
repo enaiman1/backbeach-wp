@@ -13,8 +13,11 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 ?>
 
-<div class="home-banner">
-    <div class="container">
+<div class="home-banner" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+    <div class="container" data-aos="fade-right"
+    data-aos-duration="1500" data-aos-delay="600">
     <h1>A Dining Experience</h1>
     </div>
 </div>
@@ -249,6 +252,8 @@ get_header();
          </div>
     </div>
 </div>
+
+
 
 
 <?php
