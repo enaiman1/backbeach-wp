@@ -39,7 +39,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="footer-warning">
     <div class="container">
        <div class="row align-items-center">
-           <div class="col-md-2 col-lg-2 col-xl-1">
+           <!-- <div class="col-md-2 col-lg-2 col-xl-1">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/glass-cheers.png" alt="backbeach logo">
            </div>
            <div class="col-lg-10 col-lg-10 col-xl-11">
@@ -47,7 +47,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <p>
                     To sell or supply liquor to a person under the age of 21 year on a licensed or regulated premises; or for a person under the age of 21 to purchase, or attempt to purchase, liquor on a licenced or regulate premises.
                 </p>
-           </div>
+           </div> -->
        </div>
     </div>
 </div>
