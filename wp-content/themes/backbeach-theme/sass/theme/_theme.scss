@@ -1,8 +1,8 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 $primary: #223a47;
 $primary-300: #5da0aa;
-$seconday: #f27257;
-$seconday-300: #ffb5a6;
+$secondary: #f27257;
+$secondary-300: #ffb5a6;
 
 $xl: 1440px;
 $lg: 992px;
@@ -52,7 +52,7 @@ body {
 .reservation-btn {
   font-family: "Fredericka the Great";
   font-size: 38px;
-  border: 1px dotted $seconday;
+  border: 1px dotted $secondary;
   display: inline-block;
   padding: 0.25em 0.5em;
   border-radius: 0.25em;
@@ -60,7 +60,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   &:hover {
-    background: $seconday;
+    background: $secondary;
     color: white;
   }
   @media (max-width: $lg) {
@@ -187,7 +187,7 @@ body {
       .social-media-holder-tablet {
         font-size: 50px;
         a {
-          color: $seconday;
+          color: $secondary;
           text-decoration: none;
           &:hover {
             color: darken($seconday, 15%);
@@ -1250,3 +1250,5 @@ body {
     }
   }
 }
+
+
